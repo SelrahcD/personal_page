@@ -84,10 +84,7 @@ Charles also provides coaching and consultancy about system architecture, develo
         <div class="md:w-2/5 mx-4 mt-4 md:mt-0">
             <div class="px-4 py-4 bg-scarlet-700 text-gray-100">
                 <span class="text-lg rambla">Last articles on the blog</span>
-                <ul class="mt-4 space-y-2">
-                    <li><a href="#" class="hover:underline">Building an event-sourced game with Phoenix Liveview: Handling errors</a></li>
-                    <li><a href="#" class="hover:underline">Building an event-sourced game with Phoenix Liveview: Handling errors</a></li>
-                    <li><a href="#" class="hover:underline">Building an event-sourced game with Phoenix Liveview: Handling errors</a></li>
+                <ul class="mt-4 space-y-4" id="lastBlogArticles">
                 </ul>
             </div>
         </div>
@@ -132,3 +129,45 @@ Charles also provides coaching and consultancy about system architecture, develo
         <div class="md:w-2/5">That sound's fun!</div>
     </div>
 </div>
+
+
+{% block head %}
+<script type='text/javascript'>
+    const http = new XMLHttpRequest();
+
+    http.open('GET', 'https://blog.chorip.am/last-articles.json');
+    http.send();
+
+    http.onload = () => {
+        const articlesList = document.getElementById('lastBlogArticles');
+
+        const data = JSON.parse(http.responseText);
+
+        console.log(data);
+
+        data.slice(0, 3)
+            .forEach((item) => {
+                console.log(item);
+                const link = document.createElement('a');
+                link.textContent = item.title;
+                link.setAttribute('href', item.url);
+                link.setAttribute('class', 'hover:underline');
+
+                const tagList = document.createElement('ul');
+                tagList.setAttribute('class', 'flex flex-row flex-wrap justify-end space-x-2');
+
+                item.tags.forEach(tag => {
+                    const tagElement = document.createElement('li');
+                    tagElement.textContent = tag;
+                    tagElement.setAttribute('class', 'bg-scarlet-600 text-sm font-semibold px-2 py-1 rounded mt-2');
+                    tagList.appendChild(tagElement);
+                });
+
+                const listElement = document.createElement('li');
+                listElement.appendChild(link);
+                listElement.appendChild(tagList);
+                articlesList.appendChild(listElement);
+            })
+    }
+</script>
+{% endblock %}
