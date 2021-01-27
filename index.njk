@@ -114,7 +114,7 @@ Charles also provides coaching and consultancy about system architecture, develo
             </div>
 
             <div class="text-right mt-4">
-                {{ primary('Take me to the blog!', 'http://blog.chorip.am?utm_medium=referral&utm_source=www.chorip.am&utm_campaign=index') }}
+                {{ primary('Take me to the blog!', 'http://blog.chorip.am?utm_medium=referral&utm_source=personal_website&utm_campaign=index') }}
             </div>
         </div>
 
@@ -149,7 +149,7 @@ Charles also provides coaching and consultancy about system architecture, develo
                 console.log(item);
                 const link = document.createElement('a');
                 link.textContent = item.title;
-                link.setAttribute('href', item.url);
+                link.setAttribute('href', item.url + '?utm_medium=referral&utm_source=personal_website&utm_campaign=last_blog_articles');
                 link.setAttribute('class', 'hover:underline');
 
                 const tagList = document.createElement('ul');
