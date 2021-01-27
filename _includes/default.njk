@@ -1,0 +1,29 @@
+{% from "_includes/actions.njk" import primary, secondary, primary_title %}
+
+<!DOCTYPE html>
+<html lang="en" class="smooth-scrolling">
+<head>
+    <title>
+        {% block title %}Charles Desneuf{% endblock %}
+    </title>
+    <meta charset="UTF-8"/>
+    {% if description %}
+    <meta name="description" content="{{description}}"/>
+    {% endif %}
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+    <link rel="stylesheet" href="/style.css?v={% version %}"/>
+    {% block head %}{% endblock %}
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@700&family=Rambla&family=Arvo&family=Old+Standard+TT:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased text-gray-900 h-screen flex flex-col">
+<div class="flex-grow">
+    {% block content %}
+    {{ content | safe }}
+    {% endblock %}
+</div>
+{% include "footer.njk" %}
+</body>
+</html>

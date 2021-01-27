@@ -1,0 +1,100 @@
+{
+  "references": [
+    {
+      "title": "No Silver Bullet - Essence and accident in software engineering - Frederick Brooks",
+      "url": "http://worrydream.com/refs/Brooks-NoSilverBullet.pdf"
+    },
+    {
+      "title": "8 Lines of Code  - Greg Young",
+      "url": "https://www.infoq.com/presentations/8-lines-code-refactoring"
+    },
+    {
+      "title": "Are we nearly there yet? - Dan North",
+      "url": "https://dannorth.net/2013/07/05/are-we-nearly-there-yet/"
+    },
+    {
+      "title": "Two day tasks - Juan Delgado",
+      "url": "https://blog.juandelgado.es/2018/07/23/two-day-tasks/"
+    },
+    {
+      "title": "The Neglected Practice of Iteration - Jeff Patton",
+      "url": "https://www.stickyminds.com/article/neglected-practice-iteration"
+    },
+    {
+      "title": "Go Small for Project Success - Michael Rosato",
+      "url": "https://pmworldlibrary.net/wp-content/uploads/2018/05/pmwj70-May2018-Rosato-go-small-for-project-success-student-paper.pdf"
+    },
+    {
+      "title": "Faut-il faire du travail de qualité ? - Jean-François Lépine",
+      "url": "https://www.youtube.com/watch?v=zVNj9axaUGc"
+    },
+    {
+      "title": "Dette technique et entropie du logiciel - Arnaud Lemaire",
+      "url": "https://www.youtube.com/watch?v=VKe9EE4MUxk"
+    },
+    {
+      "title": "Using cost of delay to determine schedule - Allan Kelly",
+      "url": "https://www.allankellyassociates.co.uk/archives/432/using-cost-of-delay-to-determine/"
+    },
+    {
+      "title": "Software has diseconomies of scale – not economies of scale - Allan Kelly",
+      "url": "https://www.allankellyassociates.co.ukarchives/472/software-has-diseconomies-of-scale-not/"
+    },
+    {
+      "title": "#NoProjects Beyond Projects - Why Projects Are Wrong & What To Do Instead - Allan Kelly",
+      "url": "https://www.youtube.com/watch?v=Rzglax8LdaM"
+    },
+    {
+      "title": "Simplicity Matters - Rich Hickey",
+      "url": "https://www.youtube.com/watch?v=rI8tNMsozo0"
+    },
+    {
+      "title": "A no nonsense GraphQL and REST comparison - Phil Sturgeon",
+      "url": "https://www.youtube.com/watch?v=vgm_uGmspMI"
+    },
+    {
+      "title": "You Might Not Need GraphQL - Phil Sturgeon",
+      "url": "https://blog.runscope.com/posts/you-might-not-need-graphql"
+    },
+    {
+      "title": "Pattern: Backends For Frontends - Sam Newman",
+      "url": "https://samnewman.io/patterns/architectural/bff/"
+    },
+    {
+      "title": "Do We Worship Complexity? - Eberhard Wolff",
+      "url": "https://www.innoq.com/en/blog/do-we-worship-complexity/"
+    },
+    {
+      "title": "Alignment on Microservices - Ivan Kusalic",
+      "url": "https://tech.travelaudience.com/alignment-of-microservices-e7db857934f"
+    },
+    {
+      "title": "Single Page Applications : to be or not to be ? - Mathieu Eveillard",
+      "url": "http://www.arolla.fr/blog/2018/09/single-page-applications/"
+    },
+    {
+      "title": "5 mistakes badass developers never do - Philippe Bourgau",
+      "url": "http://philippe.bourgau.net/5-mistakes-badass-developers-never-do/"
+    },
+    {
+      "title": "Domain Driven Design for Everyone Else - Barry O Sullivan",
+      "url": "https://dev.to/barryosull/domain-driven-design-for-everyone-else-a9"
+    },
+    {
+      "title": "Imaginary Problems Are the Root of Bad Software - George Hosu",
+      "url": "https://medium.com/@george3d6/imaginary-problems-d4f2921bd1b8"
+    },
+    {
+      "title": "The Sunk Cost Fallacy - David McRaney",
+      "url": "https://youarenotsosmart.com/2011/03/25/the-sunk-cost-fallacy/"
+    },
+    {
+      "title": "Mind's Limit Found: 4 Things at Once - Clara Moskowitz",
+      "url": "https://www.livescience.com/2493-mind-limit-4.html"
+    },
+    {
+      "title": "Cargo cult - Bastien Dubois",
+      "url": "https://vimeo.com/120816425"
+    }
+  ]
+}

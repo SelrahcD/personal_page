@@ -1,0 +1,50 @@
+---
+layout: page.njk
+---
+
+<div class="text mt-12 w-full lg:w-1/2 mx-auto">
+    {{ content | safe }}
+</div>
+
+
+{% if youtube %}
+<div class="flex flex-row justify-center mt-12 w-full lg:w-1/2 mx-auto">
+    <div class="w-full mx-auto">
+        <span class="khand text-scarlet-700 text-2xl">Recorded version</span>
+        <div class="relative h-0 overflow-hidden max-w-full bg-red-200 mt-2" style="padding-bottom: 56.25%">
+            <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/{{ youtube }}" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+{% if slideshare %}
+<div class="flex flex-row justify-center mt-12 w-full lg:w-1/2 mx-auto">
+    <div class="w-full mx-auto">
+        <span class="khand text-scarlet-700 text-2xl">Slides</span>
+        <div class="relative h-0 overflow-hidden max-w-full mt-2"  style="padding-bottom: 56.25%">
+            <iframe src="//www.slideshare.net/slideshow/embed_code/key/{{ slideshare }}"
+                    frameborder="0" scrolling="no" allowfullscreen
+                    class="absolute top-0 left-0 w-full h-full"></iframe>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+
+{% if references %}
+<div class="flex flex-row justify-center mt-12 w-full lg:w-1/2 mx-auto">
+    <div class="w-full mx-auto">
+        <span class="khand text-scarlet-700 text-2xl">References</span>
+        <ul class="space-y-2 mt-2">
+            {% for reference in references -%}
+            <li><a href="reference.url" class="hover:underline">{{ reference.title }}</a></li>
+            {% endfor -%}
+        </ul>
+    </div>
+</div>
+{% endif %}
+
+
+

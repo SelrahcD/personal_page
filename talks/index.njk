@@ -1,0 +1,26 @@
+---
+title: Talks
+layout: page
+templateEngineOverride: njk
+---
+
+<div class="text mt-12">
+    <p>I gave talks on different subjects in the past, from dealing with exceptions or writing better tests to help a
+        team
+        growing or reflection on architecture and tooling.
+    </p>
+
+    <p>Unfortunately for you, if you're not a French speaker, recorded versions are in French, but slides can probably
+        make some sense. If you're a French speaker, well, you're lucky!
+    </p>
+</div>
+
+{%- for post in collections.talk -%}
+<div class="mt-8">
+    <a href="{{ post.url }}" class="text-scarlet-700 rambla text-2xl">{{ post.data.title }}</a>
+
+    <div class="text mt-4">
+        {{ post.data.description | renderUsingMarkdown | safe }}
+    </div>
+</div>
+{%- endfor -%}

@@ -1,0 +1,93 @@
+---
+layout: page
+title: Personal projects
+---
+{% from "_includes/actions.njk" import primary, secondary %}
+
+<div class="text">
+    <p class="mt-12">I sometimes code during evenings and week-ends, most of the time for experimenting, but, once in a while, a project is interesting enough to go online.</p>
+    <p>Here they are!</p>
+    <p>If you're interested in the projects that didn't make the cut, you can find them on <a href="https://github.com/SelrahcD">Github</a>.</p>
+</div>
+
+<div class="mt-12 flex flex-col-reverse md:flex-row">
+    <div class="md:w-1/2">
+        <span class="rambla text-scarlet-700 text-2xl font-bold ">Burritalks.io</span>
+        <div class="text mt-4">
+            <p class="font-semibold">Burritalks.io references interesting talks around development and creating software.</p>
+
+            <p>As an avid learner, I watch a lot of conferences online.</p>
+            <p>Some people are waiting for the next season of their favorite show;
+                I'm waiting for some conferences to publish the recorded talks.
+            </p>
+            <p>While coaching teams, I sometimes refer to talks, and I felt it would be convenient to
+                group them.
+                I decided to make a website out of the list as it can probably be a useful resource for others as
+                well.
+            </p>
+            <p>The website is built on top of Hugo, with Tailwind CSS and
+                some a JS built CLI to help with repetitive tasks.
+            </p>
+        </div>
+        <div class="flex flex-col md:flex-row-reverse items-end space-y-4 space-x-reverse space-x-4 mt-4">
+            {{ primary('Visit the website', 'https://www.burritalks.io?utm_medium=referral&utm_source=www.chorip.am&utm_campaign=projects_page') }}
+            {{ secondary('Repository', 'https://github.com/SelrahcD/burritalks') }}
+        </div>
+    </div>
+    <div class="md:w-1/2 pb-8 md:pl-16">
+        <div class="flex bg-scarlet-700 md:pl-8 md:pb-8 md:mt-8">
+            <img src="/images/burritalks.io.jpg" class="object-scale-down h-full w-full md:-mt-8 shadow-lg rounded">
+        </div>
+    </div>
+</div>
+
+
+<div class="flex flex-col-reverse md:flex-row-reverse mt-24">
+    <div class="md:w-1/2">
+        <span class="rambla text-scarlet-700 text-2xl font-bold ">Schtroumpsify</span>
+
+        <div class="text mt-4">
+            <p class="font-semibold">Schtroumpsify is a Twitter bot translating all tweets from the French newspaper Le Monde in smurf language.</p>
+
+            <p>It all started with a discussion at the coffee maker: Would it be possible
+                to build an automated translater from French to Smurf?
+            </p>
+
+            <p>I decided to give it a try and looked for a use case. I decided to build a
+                bot that will tweet in Smurf every tweet from the French newspaper Le Monde.
+            </p>
+
+            <p>I found a French grammatical parser developed by the INRIA, the French National
+                Institute for Research in Computer Science and Automation. I built a node application
+                calling a forgotten demo version running on their machines.
+            </p>
+
+            <p>They ended up removing the service at some point, killing the bot at the same time.
+            </p>
+
+            <p>Later, I started learning Elixir and decided to resuscitate the bot.</p>
+
+            <p>I found a docker image of the parser, which was unfortunately really heavy - think 10Gb -,
+                and decided to shrink its size. This was the first part of the revival of the
+                Schtroumpsifier - Schtroumpf is French for Smurf.
+            </p>
+
+            <p>Once able to parse French again, I built a Phoenix application displaying the
+                tweets in realtime and automatically tweeting translated news.
+            </p>
+        </div>
+
+
+        <div class="flex flex-col md:flex-row-reverse items-end space-y-4 space-x-reverse space-x-4 mt-4">
+            {{ primary('Visit the website', 'https://schtroumpsify.chorip.am?utm_medium=referral&utm_source=www.chorip.am&utm_campaign=projects_page') }}
+            {{ secondary('The bot on Twitter', 'https://twitter.com/leschtroumpffr') }}
+            {{ secondary('Repository', 'https://github.com/SelrahcD/schtroumpsify') }}
+        </div>
+
+    </div>
+    <div class="md:w-1/2 pb-8 md:pr-16 md:mt-8">
+        <div class="flex bg-scarlet-700 md:pl-8 md:pb-8">
+            <img src="/images/schtroumpsify.chorip.png" class="h-full w-full md:-mt-8 shadow-lg rounded">
+        </div>
+    </div>
+</div>
