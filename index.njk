@@ -153,12 +153,12 @@ Charles also provides coaching and consultancy about system architecture, develo
                 link.setAttribute('class', 'hover:underline');
 
                 const tagList = document.createElement('ul');
-                tagList.setAttribute('class', 'flex flex-row flex-wrap justify-end space-x-2');
+                tagList.setAttribute('class', 'flex flex-row flex-wrap justify-end');
 
                 item.tags.forEach(tag => {
                     const tagElement = document.createElement('li');
                     tagElement.textContent = tag;
-                    tagElement.setAttribute('class', 'bg-scarlet-600 text-sm font-semibold px-2 py-1 rounded mt-2');
+                    tagElement.setAttribute('class', 'text-xs font-semibold mr-1 mt-2 tag');
                     tagList.appendChild(tagElement);
                 });
 
