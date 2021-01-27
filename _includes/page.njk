@@ -1,16 +1,8 @@
 {% extends "_includes/default.njk" %}
 
 {% block title %} {{ title }} - {{ super() }} {% endblock %}
+
 {% block content %}
-<div class="container mx-auto px-2 md:px-0 py-4 border-b-2 border-gray-300 text-scarlet-700 overflow-y-auto">
-    <div class="flex flex-row items-center">
-            <a href="/" class="font-semibold hover:bg-gray-200 px-3 py-1 rounded">Home</a>
-            <a href="/work" class="font-semibold hover:bg-gray-200 px-3 py-1 rounded">Work</a>
-            <a href="/projects" class="font-semibold hover:bg-gray-200 px-3 py-1 rounded">Projects</a>
-            <a href="/talks" class="font-semibold hover:bg-gray-200 px-3 py-1 rounded">Talks</a>
-            <a href="http://blog.chorip.am?utm_medium=referral&utm_source=personal_website&utm_campaign=navbar" class="font-semibold hover:bg-gray-200 px-3 py-1 rounded">Blog</a>
-    </div>
-</div>
 
 <div class="container mx-auto py-12 px-4">
     {{ primary_title( title ) }}

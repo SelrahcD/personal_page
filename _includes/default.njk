@@ -13,12 +13,17 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
     <link rel="stylesheet" href="/style.css?v={% version %}"/>
+    <script src="/js/alpine.js?v={% version %}"></script>
+
     {% block head %}{% endblock %}
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Khand:wght@700&family=Rambla&family=Arvo&family=Old+Standard+TT:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body class="antialiased text-gray-900 h-screen flex flex-col">
+<body class="antialiased text-gray-900 h-screen flex flex-col" x-data="{displayMenu: false}">
+
+{% include "_includes/menu.njk" %}
+
 <div class="flex-grow">
     {% block content %}
     {{ content | safe }}
