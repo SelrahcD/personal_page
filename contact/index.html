@@ -1,0 +1,41 @@
+---
+title: Contact
+layout: page
+---
+
+<p class="lg:w-1/2 mx-auto">
+    Do not hesitate to contact me by filling the form below, I'll get back to you shortly!
+</p>
+
+<form action="/contact/success/" name="contact" method="POST" class="w-full lg:w-1/2 mx-auto mt-8"
+      data-netlify="true" netlify-honeypot="bot-field"
+>
+    <div class="hidden">
+        <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+    </div>
+    <div>
+        <label for="email" class="block font-medium text-gray-700">
+            Your email:
+        </label>
+        <input type="email" name="email" id="email" placeholder="you@test.com" required
+               class="my-1 border-gray-300 rounded-md w-full">
+        <p class="text-sm text-gray-700">I won't spam you, it's just for me to reply :)</p>
+    </div>
+
+    <div>
+        <label for="message" class="block font-medium text-gray-700">
+            Your message:
+        </label>
+    </div>
+    <textarea name="message" id="message" required
+              class="my-1 border-gray-300 rounded-md w-full h-40"></textarea>
+    <div class="text-right">
+        <button type="submit"
+                class="inline-block bg-scarlet-700 py-2 px-3 text-gray-100 font-semibold rounded-lg rambla text-sm tracking-wide shadow hover:shadow-none hover:bg-scarlet-800"
+        >Send!</button>
+    </div>
+</form>
+
+<p class="mx-auto lg:w-1/2 mt-8">
+    You can also <a href="https://twitter.com/selrahcd">ping me on Twitter</a>.</p>
+</p>
