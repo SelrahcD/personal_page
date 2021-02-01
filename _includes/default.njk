@@ -19,6 +19,11 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Khand:wght@700&family=Rambla&family=Arvo&family=Old+Standard+TT:wght@400;700&display=swap" rel="stylesheet">
+
+    {% if site.environment == "production" %}
+    <script async defer data-domain="chorip.am" src="https://plausible.io/js/plausible.js"></script>
+    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+    {% endif %}
 </head>
 <body class="antialiased text-gray-900 h-screen flex flex-col" x-data="{displayMenu: false}">
 
