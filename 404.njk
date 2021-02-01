@@ -1,0 +1,15 @@
+---
+title: 404 error
+layout: page
+permalink: 404.html
+---
+
+<div class="text-center text">
+    <p class="text-2xl khand">It looks like you're lost!</p>
+    <p>You can use the menu above to go back to some more interesting content!</p>
+</div>
+
+{% if site.environment == "production" %}
+<script>plausible("404",{ props: { path: document.location.pathname } });</script>
+{% endif %}
+
