@@ -5,8 +5,6 @@ description: "Personal website of Charles Desneuf, also known as SelrahcD, a fre
 Charles also provides coaching and consultancy about system architecture, development, and testing."
 ---
 
-{% from "_includes/actions.njk" import primary, secondary %}
-
 <header class="topography">
     <div class="h-screen flex flex-col justify-between">
 
@@ -14,8 +12,8 @@ Charles also provides coaching and consultancy about system architecture, develo
             <div class="flex-1 flex flex-wrap content-center container px-4">
                 {{ displayMenu }}
                 <h1 class="text-scarlet-700">
-                    <span class="khand block text-6xl sm:text-9xl" style=" text-shadow: 0 2px 4px rgba(0,0,0,0.10);">Hi!</span>
-                    <span class="khand block text-6xl sm:text-9xl" style=" text-shadow: 0 2px 4px rgba(0,0,0,0.10);">I'm Charles,</span>
+                    <span class="khand block font-semibold text-6xl sm:text-9xl" style=" text-shadow: 0 2px 4px rgba(0,0,0,0.10);">Hi!</span>
+                    <span class="khand block font-semibold text-6xl sm:text-9xl" style=" text-shadow: 0 2px 4px rgba(0,0,0,0.10);">I'm Charles,</span>
                     <span class="block rambla text-4xl sm:text-5xl" style=" text-shadow: 0 2px 4px rgba(0,0,0,0.10);">a freelance developer,</span>
                     <span class="block rambla text-4xl sm:text-5xl" style=" text-shadow: 0 2px 4px rgba(0,0,0,0.10);">agile & craft coach,</span>
                     <span class="block rambla text-4xl sm:text-5xl" style=" text-shadow: 0 2px 4px rgba(0,0,0,0.10);">and occasional speaker.</span>
@@ -88,7 +86,7 @@ Charles also provides coaching and consultancy about system architecture, develo
                 </p>
             </div>
             <div class="text-right mt-4">
-                {{ primary('Let me see that!', '/talks') }}
+                <a href="/talks" class="primary-action">Let me see that!</a>
             </div>
         </div>
         <div class="md:w-2/5 mt-4 md:mt-0 md:pr-4">
@@ -109,7 +107,7 @@ Charles also provides coaching and consultancy about system architecture, develo
                 </p>
             </div>
             <div class="text-right mt-4">
-                {{ primary('That sounds fun!', '/projects') }}
+                <a href="/projects" class="primary-action">That sounds fun!</a>
             </div>
     </div>
 
@@ -124,7 +122,7 @@ Charles also provides coaching and consultancy about system architecture, develo
             </div>
 
             <div class="text-right mt-4">
-                {{ primary('Take me to the blog!', 'http://blog.chorip.am?utm_medium=referral&utm_source=personal_website&utm_campaign=index') }}
+                <a href="http://blog.chorip.am?utm_medium=referral&utm_source=personal_website&utm_campaign=index" class="primary-action">Take me to the blog!</a>
             </div>
         </div>
 
@@ -160,7 +158,7 @@ Charles also provides coaching and consultancy about system architecture, develo
                 const link = document.createElement('a');
                 link.textContent = item.title;
                 link.setAttribute('href', item.url + '?utm_medium=referral&utm_source=personal_website&utm_campaign=last_blog_articles');
-                link.setAttribute('class', 'hover:underline');
+                link.setAttribute('class', 'hover:underline text-sm');
 
                 const tagList = document.createElement('ul');
                 tagList.setAttribute('class', 'flex flex-row flex-wrap justify-end');

@@ -17,7 +17,7 @@ templateEngineOverride: njk
 
 {%- for post in collections.talk -%}
 <div class="mt-8">
-    <a href="{{ post.url }}" class="text-scarlet-700 rambla text-2xl">{{ post.data.title }}</a>
+    <a href="{{ post.url }}" class="text-scarlet-700 khand text-2xl">{{ post.data.title }}</a>
 
     <div class="text mt-4">
         {{ post.data.description | renderUsingMarkdown | safe }}

@@ -2,7 +2,6 @@
 layout: page
 title: Personal projects
 ---
-{% from "_includes/actions.njk" import primary, secondary %}
 
 <div class="text">
     <p class="mt-12">I sometimes code during evenings and week-ends, most of the time for experimenting, but, once in a while, a project is interesting enough to go online.</p>
@@ -12,7 +11,7 @@ title: Personal projects
 
 <div class="mt-12 flex flex-col-reverse md:flex-row">
     <div class="md:w-1/2">
-        <span class="rambla text-scarlet-700 text-2xl font-bold ">Burritalks.io</span>
+        <span class="khand text-scarlet-700 text-2xl">Burritalks.io</span>
         <div class="text mt-4">
             <p class="font-semibold">Burritalks.io references interesting talks around development and creating software.</p>
 
@@ -30,8 +29,8 @@ title: Personal projects
             </p>
         </div>
         <div class="flex flex-col md:flex-row-reverse items-end space-y-4 space-x-reverse space-x-4 mt-4">
-            {{ primary('Visit the website', 'https://www.burritalks.io?utm_medium=referral&utm_source=personal_website&utm_campaign=projects_page') }}
-            {{ secondary('Repository', 'https://github.com/SelrahcD/burritalks') }}
+            <a href="https://www.burritalks.io?utm_medium=referral&utm_source=personal_website&utm_campaign=projects_page" class="primary-action">Visit the website</a>
+            <a href="https://github.com/SelrahcD/burritalks" class="secondary-action">Repository</a>
         </div>
     </div>
     <div class="md:w-1/2 pb-8 md:pl-16">
@@ -44,7 +43,7 @@ title: Personal projects
 
 <div class="flex flex-col-reverse md:flex-row-reverse mt-24">
     <div class="md:w-1/2">
-        <span class="rambla text-scarlet-700 text-2xl font-bold ">Schtroumpsify</span>
+        <span class="khand text-scarlet-700 text-2xl">Schtroumpsify</span>
 
         <div class="text mt-4">
             <p class="font-semibold">Schtroumpsify is a Twitter bot translating all tweets from the French newspaper Le Monde in smurf language.</p>
@@ -79,9 +78,9 @@ title: Personal projects
 
 
         <div class="flex flex-col md:flex-row-reverse items-end space-y-4 space-x-reverse space-x-4 mt-4">
-            {{ primary('Visit the website', 'https://schtroumpsify.chorip.am?utm_medium=referral&utm_source=personal_website&utm_campaign=projects_page') }}
-            {{ secondary('The bot on Twitter', 'https://twitter.com/leschtroumpffr') }}
-            {{ secondary('Repository', 'https://github.com/SelrahcD/schtroumpsify') }}
+            <a href="https://schtroumpsify.chorip.am?utm_medium=referral&utm_source=personal_website&utm_campaign=projects_page" class="primary-action">Visit the website</a>
+            <a href="https://twitter.com/leschtroumpffr" class="secondary-action">The bot on Twitter</a>
+            <a href="https://github.com/SelrahcD/schtroumpsify" class="secondary-action">Repository</a>
         </div>
 
     </div>
