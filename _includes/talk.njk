@@ -39,7 +39,7 @@ layout: page.njk
         <span class="khand text-scarlet-700 text-2xl">References</span>
         <ul class="space-y-2 mt-2">
             {% for reference in references -%}
-            <li><a href="reference.url" class="hover:underline">{{ reference.title }}</a></li>
+            <li><a href="{{ reference.url }}" class="hover:underline">{{ reference.title }}</a></li>
             {% endfor -%}
         </ul>
     </div>
