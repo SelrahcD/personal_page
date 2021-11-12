@@ -17,10 +17,17 @@
     {% if description %}
     <meta name="twitter:description" content="{{ description }}" />
     {% endif %}
+    {% if preview_image %}
+    <meta property="twitter:image" content="{{ preview_image }}" />
+    {% endif %}
+
 
     <meta property="og:title" content="{{ title }}" />
     {% if description %}
     <meta property="og:description" content="{{ description }}" />
+    {% endif %}
+    {% if preview_image %}
+    <meta property="og:image" content="{{ preview_image }}" />
     {% endif %}
 
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>

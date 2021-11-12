@@ -1,5 +1,6 @@
 const htmlmin = require("html-minifier");
 const MarkdownIt = require("markdown-it");
+const pageAssetsPlugin = require('eleventy-plugin-page-assets');
 const mdRender = new MarkdownIt();
 
 module.exports = function (eleventyConfig) {
@@ -39,4 +40,12 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addFilter("renderUsingMarkdown", function(content) {
         return mdRender.render(content);
     });
+
+    eleventyConfig.addPlugin(pageAssetsPlugin, {
+        mode: "directory",
+        postsMatching: "talks/*/*.md",
+        hashAssets: false,
+        assetsMatching: "*.jpg"
+    });
+
 };

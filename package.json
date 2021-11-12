@@ -15,6 +15,7 @@
     "alpinejs": "^2.8.0",
     "autoprefixer": "^10.2.3",
     "clean-css-cli": "^4.3.0",
+    "eleventy-plugin-page-assets": "github:maxboeck/eleventy-plugin-page-assets",
     "html-minifier": "^4.0.0",
     "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.0.2"

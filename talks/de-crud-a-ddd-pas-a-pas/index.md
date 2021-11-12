@@ -12,8 +12,8 @@ tags:
   - DDD
 slideshare: E0V4LbtpNz2KOf
 youtube: bXTasFb6PiA
+preview_image: preview.jpg
 ---
-
 
 Start-ups need to go fast; they have to create something as soon as possible to prove there is some product-market fit. Rapid Application Development, use of CRUD frameworks can speed things a lot.
 

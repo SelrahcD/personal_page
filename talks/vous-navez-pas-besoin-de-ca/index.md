@@ -13,7 +13,6 @@ youtube: sJLmVOy_h4M
 slideshare: L5BRRaGZiUoNxM
 ---
 
-
 Buzzwords surround us; Microservices, GraphQL, Rest, DDD, Single Page App, and the list is still long...
 
 Because we want to be part of the future, as developers, we sometimes add some tools to our systems without overthinking about it.
