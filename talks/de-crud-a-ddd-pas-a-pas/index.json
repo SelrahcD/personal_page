@@ -1,0 +1,36 @@
+{
+  "references": [
+    {
+      "title": "Design patterns for modernizing legacy code bases - Matthias Noback",
+      "url": "https://www.youtube.com/watch?v=WI1QY6OMglE"
+    },
+    {
+      "title": "Why & How to use Doctrine Migrations Rollup? - Olivier Dolbeau ",
+      "url": "https://odolbeau.fr/blog/doctrine-migrations-rollup.html#how-to-automate-the-rollup-command"
+    },
+    {
+      "title": "Rolling up database migrations with Doctrine - Andreas Möller",
+      "url": "https://localheinz.com/blog/2020/06/10/rolling-up-database-migrations-with-doctrine/"
+    },
+    {
+      "title": "Aggregate your data by using SQL views and Doctrine. - Robbert Stevens",
+      "url": "https://robbert.rocks/aggregate-your-data-by-using-sql-views-and-doctrine?utm_source=pocket_mylist"
+    },
+    {
+      "title": "Separating Concerns using Embeddables - Doctrine documentation",
+      "url": "https://www.doctrine-project.org/projects/doctrine-orm/en/2.9/tutorials/embeddables.html"
+    },
+    {
+      "title": "approvals/approval-tests",
+      "url": "https://github.com/approvals/ApprovalTests.php"
+    },
+    {
+      "title": "Approval testing - Emily Bach",
+      "url": "https://www.youtube.com/watch?v=0ZVKcFsEp-4"
+    },
+    {
+      "title": "Live-Refactoring de Legacy Code avec la technique du Golden Master - Philippe Bourgau",
+      "url": "https://www.youtube.com/watch?v=xXvuBX1bVh8"
+    }
+  ]
+}
