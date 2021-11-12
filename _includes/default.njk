@@ -18,6 +18,11 @@
     <meta name="twitter:description" content="{{ description }}" />
     {% endif %}
 
+    <meta property="og:title" content="{{ title }}" />
+    {% if description %}
+    <meta property="og:description" content="{{ description }}" />
+    {% endif %}
+
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
     <link rel="stylesheet" href="/style.css?v={% version %}"/>
