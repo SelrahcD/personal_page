@@ -11,6 +11,7 @@ tags:
   - quality
 youtube: sJLmVOy_h4M
 slideshare: L5BRRaGZiUoNxM
+preview_image: preview.jpg
 ---
 
 Buzzwords surround us; Microservices, GraphQL, Rest, DDD, Single Page App, and the list is still long...

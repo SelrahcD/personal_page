@@ -13,6 +13,7 @@ tags:
   - phpunit
 youtube: Bjw6N7bjzf4
 slideshare: 4ppVu9UiJBTom3
+preview_image: preview.jpg
 ---
 
 We all know how essential tests are to ensure our applications are working correctly, 

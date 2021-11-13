@@ -11,6 +11,7 @@ tags:
   - talk
   - growing team
 slideshare: vCMiLnFgUrHu6k
+preview_image: preview.jpg
 ---
 
 I've been working for the same company for enough time to see the dev team grow 

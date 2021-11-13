@@ -12,6 +12,7 @@ tags:
   - exceptions
 youtube: oY_E-yLgtRk
 slideshare: nz4RgacQN430I
+preview_image: preview.jpg
 ---
 
 Like all of us, I sometimes deal with legacy code to add some new features. This 
