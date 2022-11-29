@@ -1,6 +1,7 @@
 const htmlmin = require("html-minifier");
 const MarkdownIt = require("markdown-it");
 const pageAssetsPlugin = require('eleventy-plugin-page-assets');
+const {URL} = require("url");
 const mdRender = new MarkdownIt();
 
 module.exports = function (eleventyConfig) {
@@ -39,6 +40,10 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addFilter("renderUsingMarkdown", function(content) {
         return mdRender.render(content);
+    });
+
+    eleventyConfig.addFilter('absoluteUrl', function (url, base) {
+        return (new URL(url, base)).toString()
     });
 
     eleventyConfig.addPlugin(pageAssetsPlugin, {

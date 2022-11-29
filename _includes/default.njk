@@ -19,6 +19,10 @@
     {% endif %}
     {% if preview_image %}
     <meta property="twitter:image" content="{{ preview_image }}" />
+    {% else %}
+
+
+    <meta property="twitter:image" content="{{'/images/social.png' | url | absoluteUrl(site.url) }}" />
     {% endif %}
 
 
@@ -28,6 +32,8 @@
     {% endif %}
     {% if preview_image %}
     <meta property="og:image" content="{{ preview_image }}" />
+    {% else %}
+    <meta property="og:image" content="{{'/images/social.png' | url | absoluteUrl(site.url) }}" />
     {% endif %}
 
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
