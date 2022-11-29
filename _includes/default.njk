@@ -11,7 +11,7 @@
     <meta name="description" content="{{description}}"/>
     {% endif %}
 
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@selrahcd" />
     <meta name="twitter:title" content="{{ title }}" />
     {% if description %}
@@ -20,8 +20,6 @@
     {% if preview_image %}
     <meta property="twitter:image" content="{{ preview_image }}" />
     {% else %}
-
-
     <meta property="twitter:image" content="{{'/images/social.png' | url | absoluteUrl(site.url) }}" />
     {% endif %}
 
