@@ -1,0 +1,24 @@
+{
+  "references": [
+    {
+      "title": "approvals / ApprovalTests.php on Github",
+      "url": "https://github.com/approvals/ApprovalTests.php"
+    },
+    {
+      "title": "Approval Testing - Emily Bache",
+      "url": "https://www.youtube.com/watch?v=0ZVKcFsEp-4"
+    },
+    {
+      "title": "Testing and Refactoring Legacy Code - Sandro Mancuso",
+      "url": "https://www.youtube.com/watch?v=_NnElPO5BU0"
+    },
+    {
+      "title": "Approval testing: 3 technics to deal with randomness - Charles Desneuf",
+      "url": "https://blog.charlesdesneuf.com/articles/approval-testing-3-technics-to-deal-with-randomness/"
+    },
+    {
+      "title": "Understand Legacy Code - Nicolas Carlo",
+      "url": "https://understandlegacycode.com/"
+    }
+  ]
+}
