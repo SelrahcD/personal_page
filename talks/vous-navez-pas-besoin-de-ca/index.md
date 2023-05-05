@@ -22,6 +22,6 @@ We pretend we're able to foresee future needs and that we'll gain time in the lo
 
 We also want to stay relevant, to follow the hype.
 
-Event backed by good intentions, these reasons are probably not good enough to add whatever we want to our stack. Are we sure we are not introducing unnecessary complexity to the system?
+Even backed by good intentions, these reasons are probably not good enough to add whatever we want to our stack. Are we sure we are not introducing unnecessary complexity to the system?
 
 This talk is an attempt to show that decisions are to be taken in the context we evolve in, that there is no silver bullet, and that we can probably do a lot more with simple tools than what we think or want to believe.
