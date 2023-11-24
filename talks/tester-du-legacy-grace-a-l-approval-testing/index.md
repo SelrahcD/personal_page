@@ -15,8 +15,6 @@ tags:
 # preview_image: preview.jpg
 ---
 
-**Suite à l'AFUP DAY de Lille 2023, ma [formation sur l'amélioration des tests automatisés](https://bit.ly/tests-afup-day-2023) est disponible avec 30% de réduction jusqu'à fin mai avec le coupon AFUP-DAY-2023**
-
 One possible definition for legacy code is "Code without tests", and as you may know, changing code that doesn't have tests can be challenging and scary, and it's often advised to introduce tests before making any change.
 
 Unfortunately, adding tests to an existing codebase is a challenge as well.
