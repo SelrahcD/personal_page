@@ -1,0 +1,12 @@
+{
+  "references": [
+    {
+      "title": "My library of Live Templates and Custom Postfix completion you can use for inspiration",
+      "url": "https://phpstorm-tricks.charlesdesneuf.com/"
+    },
+    {
+      "title": "Emily Bache's Tennis Kata",
+      "url": "https://github.com/emilybache/Tennis-Refactoring-Kata/tree/main"
+    }
+  ]
+}
