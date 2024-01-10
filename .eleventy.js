@@ -50,7 +50,7 @@ module.exports = function (eleventyConfig) {
         mode: "directory",
         postsMatching: "talks/*/*.md",
         hashAssets: false,
-        assetsMatching: "*.jpg"
+        assetsMatching: "*.[jpg|png]"
     });
 
 };
