@@ -18,7 +18,7 @@
     <meta name="twitter:description" content="{{ description }}" />
     {% endif %}
     {% if preview_image %}
-    <meta property="twitter:image" content="{{ preview_image }}" />
+    <meta property="twitter:image" content="{{ preview_image | url | absoluteUrl(site.url)}}" />
     {% else %}
     <meta property="twitter:image" content="{{'/images/social.png' | url | absoluteUrl(site.url) }}" />
     {% endif %}
@@ -29,7 +29,7 @@
     <meta property="og:description" content="{{ description }}" />
     {% endif %}
     {% if preview_image %}
-    <meta property="og:image" content="{{ preview_image }}" />
+    <meta property="og:image" content="{{ preview_image | url | absoluteUrl(site.url) }}" />
     {% else %}
     <meta property="og:image" content="{{'/images/social.png' | url | absoluteUrl(site.url) }}" />
     {% endif %}
